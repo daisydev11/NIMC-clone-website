@@ -1,0 +1,756 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Identity Management Commission</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+        .nimc{
+            width: 600px;
+            height: 13vh;
+        }
+
+        .maindiv{
+            width: 100%;
+            height: 320vh;
+            background-color: rgb(56, 101, 56);
+        }
+
+        .secdiv{
+            width: 70%;
+            height: 315vh;
+            background-color: whitesmoke;
+            margin-left: 220px;
+
+        }
+
+        .myNav{
+            background-color: rgb(40, 114, 40);
+            color: white;
+        }
+
+        .nav-item{
+            color: white;
+        }
+
+        .slideshow{
+            margin-top: 12px;
+            /* padding: 10px; */
+        }
+
+        .padding_div{
+            padding: 12px;
+        }
+
+        .flexdiv{
+          display: flex;
+          justify-content: space-evenly;
+        }
+
+        .secondFlexdiv{
+          display: flex;
+          justify-content: space-evenly;
+        }
+
+        .line2flexdiv{
+          display: flex;
+          justify-content: space-evenly;
+        }
+
+        .line3flexdiv{
+          display: flex;
+          justify-content: space-evenly;
+        }
+
+        .footer{
+          display: flex;
+          justify-content: space-evenly;
+          width: 100%;
+          height: 40vh;
+          background-color: rgb(39, 90, 39);
+        }
+
+        .lastflexdiv{
+          display: flex;
+          justify-content: space-evenly;
+        }
+
+        .covidButton{
+          background-color: rgb(55, 55, 131);
+          color: white;
+          float: left;
+          margin-left: 705px;
+          border-radius: 1vh;
+          border: none;
+        }
+
+        .bigDiv1{
+          width: 450px;
+          height: 35vh; 
+          background-color: rgb(200, 196, 196);
+          border: solid white 1px;
+          border-radius: 5px;
+        }
+        .smallDiv1{
+          width: 100%;
+          height: 6vh;
+          background-color: rgb(56, 124, 56);
+        }
+        .p1{
+          font-size: small;
+          color: white;
+          padding: 10px;
+        }
+        .imgMan{
+          width: 30%;
+          height: 20vh;
+          margin-top: 10px;
+          padding-left: 5px;
+        }
+        .p2{
+          padding: 5px;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 15px;
+        }
+        .bigDiv2{
+          width: 450px;
+          height: 35vh;
+          background-color: rgb(200, 196, 196);
+          border: solid white 1px;
+          border-radius: 5px;
+        }
+        .smallDiv2{
+          width: 100%;
+          height: 6vh;
+          background-color: rgb(56, 124, 56);
+        }
+        .p3{
+          font-size: small;
+           color: white;
+            padding: 10px;
+        }
+        .p4{
+          padding: 5px;
+          font-family: 'Montserrat', sans-serif;
+          font-style: italic;
+        }
+        .button2{
+          width: 100%;
+          height: 3vh;
+          background-color: white;
+          border: solid rgb(164, 164, 164) 1px;
+          border-radius: 4px;
+          margin-top: 5px; font-size: 13px;
+          font-weight: 630;
+          color: green;
+          background-color: whitesmoke;
+        }
+        .bigDiv3{
+          width: 450px;
+          height: 50vh;
+          background-color: rgb(200, 196, 196);
+          border: solid white 1px;
+          border-radius: 5px;
+        }
+        .smallDiv3{
+          width: 100%;
+          height: 6vh;
+          background-color: rgb(56, 124, 56);
+        }
+        .p5{
+          font-size: small;
+          color: white;
+          padding: 10px;
+          font-family: 'Montserrat', sans-serif;
+        }
+        .img1{
+          width:100%;
+          height: 40vh;
+        }
+        .img2{
+          width:100%;
+          height: 40vh;
+        }
+        .img3{
+          width:100%; 
+          height: 40vh;
+        }
+        .bigDiv4{
+          width: 450px;
+          height: 50vh;
+          background-color: rgb(200, 196, 196);
+          border: solid white 1px;
+          border-radius: 5px;
+        }
+        .smallDiv4{
+          width: 100%;
+          height: 6vh;
+          background-color: rgb(56, 124, 56);
+        }
+        .p6{
+          font-size: small;
+          color: white;
+          padding: 10px;
+          font-family: 'Montserrat', sans-serif;
+        }
+        .innerline3Diva{
+          width: 230px;
+          height: 25vh;
+          border: solid black 5px;
+          border-radius: 9px;
+        }
+        .innerline3Divb{
+          width: 230px;
+          height: 25vh;
+          border: solid green 5px;
+          border-radius: 9px;
+        }
+        .innerP1{
+          color: black;
+          text-align: center;
+          padding: 10px;
+          margin-top: 50px;
+          font-family: 'Montserrat', sans-serif;
+        }
+        .innerP2{
+          color: rgb(3, 98, 3);
+          font-size: 15px;
+          font-weight: 400;
+          text-align: center;
+          margin-top: -20px;
+          font-family: 'Montserrat', sans-serif;
+        }
+        .partnerHead{
+          font-family: 'Montserrat', sans-serif
+        }
+        .button3{
+          border: solid green 1px;
+          border-radius: 5px;
+          height: 8vh;
+          font-weight: 700;
+          font-size: 18px;
+          color: green;
+          margin-left: 380px;
+          font-family: 'Montserrat', sans-serif;
+        }
+        .p7{
+          color: white;
+          padding: 5px;
+          font-family: 'Montserrat', sans-serif;
+        }
+        .links{
+          text-decoration: none;
+          color: rgb(33, 184, 33);
+          font-family: 'Montserrat', sans-serif;
+        }
+        .p8{
+          color: white;
+           padding: 5px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .p9{
+          color: white;
+          padding: 5px;
+          font-family: 'Montserrat', sans-serif;
+        }
+        .img4{
+          width: 210px;
+        }
+        .p10{
+          color: white;
+          margin-top: 50px;
+        }
+        .nimcLibary{
+          text-decoration: none;
+          color: rgb(33, 184, 33);
+          font-weight: 800;
+          font-size: 12px;
+          padding-left: 20px;
+          font-family: 'Montserrat', sans-serif;
+        }
+        .p11{
+          color: white;
+          padding: 5px;
+          font-family: 'Montserrat', sans-serif;
+        }
+        .icons{
+          width: 40px;
+          height: 3vh;
+        }
+        .coatofarms{
+          width: 150px; 
+          margin-top: 60px;
+        }
+        .endofFooter{
+          width: 100%;
+          height: 8vh;
+          background-color: black;
+        }
+        .links:hover{
+          color: white;
+        }
+        .nav-link:hover{
+          background-color: white;
+        }
+        
+        
+        /* Media query starts here */
+
+        @media (min-width: 280px) and (max-width: 767px){
+          .nimc{
+            width: 250px;
+            height: 5vh;
+        }
+        .maindiv{
+            width: 100%;
+            height: 637vh;
+            background-color: rgb(56, 101, 56);
+        }
+        .secdiv{
+            width: 70%;
+            height: 636vh;
+            background-color: whitesmoke;
+            margin-left: 53px;
+        }
+        .navbar{
+          height: 40vh;
+          width: 130px;
+          display: flex;
+          padding-top: 5px;
+        }
+        .search{
+          width: 100px;
+          height: 3vh;
+        }
+        .caurosel-inner{
+          width: 150px;
+          height: 30vh;
+        }
+        .covidButton{
+          width: 200px;
+          height: 3vh;
+          background-color: rgb(55, 55, 131);
+          color: white;
+          float: left;
+          margin-left: 23px;
+          border-radius: 1vh;
+          border: none;
+          font-size: 12px;
+          font-weight: 600;
+        }
+        .flexdiv{
+          display: grid;
+          justify-content: space-evenly;
+        }
+        .bigDiv1{
+          width: 200px;
+          height: 30vh; 
+          background-color: rgb(200, 196, 196);
+          border: solid white 1px;
+          border-radius: 5px;
+          
+          
+        }
+        .bigDiv2{
+          width: 200px;
+          height: 35vh;
+          background-color: rgb(200, 196, 196);
+          border: solid white 1px;
+          border-radius: 5px;
+          
+        }
+        .smallDiv1{
+          width: 100%;
+          height: 5vh;
+          background-color: rgb(56, 124, 56);
+        }
+        .smallDiv2{
+          width: 100%;
+          height: 5vh;
+          background-color: rgb(56, 124, 56);
+        }
+        .p2{
+          padding: 5px;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 8px;
+          font-weight: 600;
+        }
+        .p4{
+          padding: 5px;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 10px;
+          font-weight: 600;
+        }
+        .button2{
+          width: 100%;
+          height: 10vh;
+          background-color: white;
+          border: solid rgb(164, 164, 164) 1px;
+          border-radius: 4px;
+          margin-top: 5px; font-size: 13px;
+          font-weight: 630;
+          color: green;
+          background-color: whitesmoke;
+          font-size: 10px;
+        }
+        .line2flexdiv{
+          display: grid;
+          justify-content: space-evenly;
+        }
+        .bigDiv3{
+          width: 250px;
+          height: 50vh;
+          background-color: rgb(200, 196, 196);
+          border: solid white 1px;
+          border-radius: 5px;
+        }
+        .bigDiv4{
+          width: 250px;
+          height: 50vh;
+          background-color: rgb(200, 196, 196);
+          border: solid white 1px;
+          border-radius: 5px;
+        }
+        .youtube{
+          width: 100%;
+          height: 47vh;
+        }
+        .line3flexdiv{
+          display: grid;
+          justify-content: space-evenly;
+        }
+        .p6{
+          font-size: small;
+          color: white;
+          padding: 5px;
+          font-family: 'Montserrat', sans-serif;
+        }
+        .p5{
+          font-size: small;
+          color: white;
+          padding: 5px;
+          font-family: 'Montserrat', sans-serif;
+        }
+        .button3{
+          border: solid green 1px;
+          width: 200px;
+          border-radius: 5px;
+          height: 8vh;
+          font-weight: 700;
+          font-size: 18px;
+          color: green;
+          margin-left: 18px;
+          font-family: 'Montserrat', sans-serif;
+        }
+        .footer{
+          display: grid;
+          justify-content: space-evenly;
+          width: 100%;
+          height: 190vh;
+          background-color: rgb(39, 90, 39);
+        }
+        .endofFooter{
+          width: 100%;
+          height: 5vh;
+          background-color: black;
+        }
+        
+        
+        
+
+
+
+
+  
+           
+      
+        }
+          
+        
+
+       
+    </style>
+ </head>
+ <body>
+<div class="maindiv">
+   <div class="secdiv">
+    <!-- padding div opens -->
+     <div class="padding_div">
+      <img src="./images/nimc_logo.png" alt="" class="nimc">
+      <input type="text" placeholder="Search.." class="search">
+      <img src="./images/search.png" alt="">
+      <hr>
+
+      <div class="container-fluid">
+    <nav class="navbar navbar-expand-xxl bg-success">
+     <div class="container-fluid myNav">
+        <ul class="navbar-nav ule">
+					<li class="nav-item">
+						<a class="nav-link ach" href="#">Home</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link ach" href="#">+About Us</a>
+					</li>
+
+					<li class="nav-item ">
+						<a class="nav-link ach" href="#">+Our Services</a>
+					</li>
+
+                    <li class="nav-item ">
+						<a class="nav-link ach" href="#">+Media</a>
+					</li>
+
+                    <li class="nav-item ">
+						<a class="nav-link ach" href="#">+Resourses</a>
+					</li>
+
+                    <li class="nav-item ">
+						<a class="nav-link ach" href="#">+Contact</a>
+					</li>
+				</ul>
+     </div>
+    </nav>
+</div>
+
+<!-- caurosel begins -->
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner slideshow">
+      <div class="carousel-item active">
+        <img src="./images/download.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/nin.png" alt="Chicago" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/dial.jpg" alt="New York" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/mapEnrol.png" alt="New York" class="d-block" style="width:100%">
+      </div>
+    </div>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+  <hr>
+  <h6 style="font-weight: lighter;">PRESS RELEASES</h6>
+  <hr>
+
+  <button class="covidButton">COVID-19 Pandemic Safely Tips>></button>
+
+<hr>
+  <br><br><div class="flexdiv">
+    <div class="bigDiv1">
+    <div class="smallDiv1">
+        <p class="p1">MEET THE DG/CEO</p>
+    </div>
+    <div class="secondFlexdiv">
+        <img src="./images/man.jpg" alt="" class="imgMan" >
+        <p class="p2">NIMC operates and regulates matters of national identity in Nigeria with services covering National Identification Number (NIN) enrolment and issuance, National e-ID card issuance, identity verification as well as data harmonization and authentication. The Commission is headed by Engr. Aliyu A. Aziz who was a pioneer.</p>
+    </div>
+    </div>
+
+    <div>
+      <div class="bigDiv2">
+        <div class="smallDiv2">
+            <p class="p3">THE MANDATE</p>
+        </div>
+            <p class="p4">Welcome to the official Web site of the National Identity Management Commission [NIMC]. Established by the NIMC Act No. 23 of 2007, the NIMC has the mandate to establish, own, operate, maintain and manage the National Identity Database in Nigeria, register persons covered by the Act, assign a Unique National Identification Number (NIN) and issue General Multi-Purpose Cards (GMPC) to those. </p>
+            <!-- <a href="" style="padding: 5px;">Readmore..</a> -->
+        </div>
+    </div>
+  </div><br>
+  <!-- flexdiv closes -->
+  
+  <div>
+
+    <button class="button2">CORPORATE ETHICS: The Commission, with its Code of Ethics, has a Zero Tolerance policy towards all forms of vice like extortion, unruly conduct, etc. Read More»</button>
+  </div><br>
+  <hr>
+
+  <div class="line2flexdiv">
+    <div>
+      <div class="bigDiv3">
+        <div class="smallDiv3">
+            <p class="p5">PRESS RELEASES</p>
+                    <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+  
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner slideshow">
+    <div class="carousel-item active">
+      <img src="./images/noextortion.jpg" alt="Los Angeles" class="d-block img1" >
+    </div>
+    <div class="carousel-item">
+      <img src="./images/engraablair.jpg" alt="Chicago" class="d-block img2">
+    </div>
+    <div class="carousel-item">
+      <img src="./images/logoLarge.png" alt="New York" class="d-block img3">
+    </div>
+  </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+        </div>
+      </div>
+    </div>
+  <div>
+    <div class="bigDiv4">
+      <div class="smallDiv4">
+          <p class="p6">ID4AFRICA 2023</p>
+          <iframe width="447" height="300" src="https://www.youtube.com/embed/tgbNymZ7vqY" class="youtube">
+          </iframe>
+          <hr>
+
+      </div>
+    </div>
+  </div>
+  </div> 
+  <!-- line2flexdiv closes -->
+  <hr>
+
+  <br><div class="line3flexdiv">
+      <div  class="innerline3Diva">
+        <p class="innerP1">PRE-ENROLMENT <br> PORTAL</p>
+        <p class="innerP2">Start your enrolment process online then head to a center</p>
+      </div>
+
+      <br><div class="innerline3Divb">
+        <p class="innerP1">GET THE NIN <br> ENROLMENT FORM</p>
+        <p class="innerP2">Download the NIN enrolment form</p>
+      </div>
+
+      <br><div class="innerline3Diva">
+        <p class="innerP1">THE ENROLMENT <br> PROCESS</p>
+        <p class="innerP2">Self service as well as assisted service available</p>
+      </div>
+
+      <br><div class="innerline3Divb">
+        <p class="innerP1">ENROLMENT CENTRE <br> LOCATOR</p>
+        <p class="innerP2">Locate all NIMC enrolment centres Nationwide</p>
+      </div>
+  </div>
+  <!-- line3flexdiv closes -->
+  <hr>
+  <h6 class="partneHead">Partner Agencies</h6>
+  <hr>
+
+  <div>
+    <img src="./images/partners_logos_j.jpg" alt="" style="width: 100%;">
+  </div>
+
+  <br><button class="button3">NIMC Showcase>></button>
+</div>
+<!-- padding div closes -->
+
+
+<!-- footer div begins here -->
+<br><br><br><br><div class="footer">
+  <div>
+    <p class="p7">Quick Links</p>
+    <ul>
+      <li><a href="" class="links">Pre-enrolment(online)</a></li>
+      <li><a href="" class="links">Enrolment Dashboard</a></li>
+      <li><a href="" class="links">Customer Satisfaction Survey</a></li>
+      <li><a href="" class="links">Mobile Digital ID</a></li>
+      <li><a href="" class="links">FAQ's</a></li>
+      <li><a href="" class="links">Take the Quiz</a></li>
+      <li><a href="" class="links">For Developers</a></li>
+      <li><a href="" class="links">NIMC Privacy Policy</a></li>
+    </ul>
+  </div>
+
+  <div>
+    <p class="p8">Recent Press Releases</p>
+    <ul>
+      <li><a href="" class="links">NIMC Enrolment, Verificatiion and <br>other Services Working Optimally, as <br>enrollment is free </a></li>
+      <li><a href="" class="links">NIMC DG Features at Tony Blair<br>Instiute's Tech Policy Accelerator <br> Programme</a></li>
+      <li><a href="" class="links">Army's Arrest of Fraudsters Faulsely<br>Claiming to be NIMC Officials</a></li>
+    </ul>
+  </div>
+
+  <div>
+    <p class="p9">Staff Email Login</p>
+    <img src="./images/staff-logS-300x120.png" alt="" class="img4">
+
+    <p class="p10">Libary Login</p>
+    <a href="" class="nimcLibary">NIMC Libary>></a>
+  </div>
+
+  <div>
+    <p class="p11">Follow Us:</p>
+    <div class="lastflexdiv">
+        <div>
+          <img src="./images/facebook.jpeg" alt="" class="icons">
+        </div>
+          
+        <br><div>
+          <img src="./images/twitter2.jpeg" alt="" class="icons">
+        </div>
+
+        <br><div>
+          <img src="./images/youtube.jpeg" alt="" class="icons">
+        </div>
+
+        <br><div>
+          <img src="./images/instagram.jpeg" alt="" class="icons">
+        </div>
+    </div>
+
+    <img src="./images/NigeriaCofA_t-300x284.png" alt="" class="coatofarms">
+  </div>
+</div>
+<!-- footer div ends here -->
+<div class="endofFooter">
+    
+</div>
+
+
+
+
+   </div>
+   <!-- secdiv closes -->
+
+    
+ </div>
+ <!-- main div closes -->
+    
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+ </body>
+ </html>
